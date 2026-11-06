@@ -59,13 +59,13 @@ Requirements: Node.js 22+, MongoDB (local or Atlas).
 # 1) Backend  ->  http://localhost:3001
 cd backend
 npm install
-cp .env.example .env   # then set MONGO_URI and TOKEN_SECRET
+# create backend/.env (variables below)
 npm run dev
 
 # 2) Frontend ->  http://localhost:3000
 cd frontend
 npm install
-cp .env.example .env   # VITE_API_URL=http://localhost:3001/api
+# create frontend/.env with VITE_API_URL=http://localhost:3001/api
 npm run dev
 ```
 

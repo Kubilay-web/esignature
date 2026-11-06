@@ -4,10 +4,9 @@ dist/
 dist-ssr/
 *.tsbuildinfo
 
-# Secrets: never commit real environment files (see *.env.example)
+# Secrets: never commit environment files
 .env
 .env.*
-!.env.example
 
 # Logs
 logs/

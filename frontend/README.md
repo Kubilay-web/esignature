@@ -14,7 +14,7 @@ Vue 3 + TypeScript + Vite single-page app for the İmzala e-signature backend (`
 
 ```bash
 npm install
-cp .env.example .env     # VITE_API_URL=http://localhost:3001/api
+# create .env with: VITE_API_URL=http://localhost:3001/api
 npm run dev              # http://localhost:3000
 ```
 
