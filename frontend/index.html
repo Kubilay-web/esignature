@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Belgeleri sıralı olarak imzalayın ve takip edin." />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f8fafc" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#020617" />
+    <title>İmzala — E-İmza</title>
+    <!-- Applies the saved theme/language before the first paint (no white flash in dark mode) -->
+    <script>
+      (function () {
+        try {
+          var d = document.documentElement
+          var t = localStorage.getItem('theme')
+          if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches)) d.classList.add('dark')
+          if (localStorage.getItem('lang') === 'en') d.lang = 'en'
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body class="min-h-screen bg-slate-50 font-sans text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

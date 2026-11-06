@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Dark mode follows the "dark" class on <html> (set from the saved preference or the OS setting) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
